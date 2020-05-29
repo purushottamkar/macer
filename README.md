@@ -141,3 +141,6 @@ MACER should offer the following performance on the given datasets. Minor deviat
 
 ## Contributing
 This repository is released under the MIT license. If you would like to submit a bugfix or an enhancement to MACER, please open an issue on this GitHub repository. We welcome other suggestions and comments too (please mail the corresponding author at purushot@cse.iitk.ac.in)
+
+## Acknowledgements
+We are thankful to Bhaskar Mukhoty for helping us identify certain cross-platform dependecies of the MACER toolchain.
