@@ -64,7 +64,7 @@ The MACER toolchain makes use of various standard libraries. A minimal list is p
 ```setup
 pip3 install -r requirements.txt
 ```
-**Note about version dependency**: although the requirements file specifies version dependencies to be exact, this is to err on the side of caution. For most of the libraries (e.g. `pandas` or `scikit-learn`), a more recent version should work well too. However, the dependency on the 1.2.4 version of the `edlib` library seems to be strict. Having a different version of this library may cause the toolchain to malfunction at evaluation time.
+**Note about version dependency**: although the requirements file specifies version dependencies to be exact, this is to err on the side of caution. For most of the libraries (e.g. `pandas` or `scikit-learn`), a more recent version should work well too. However, the dependency on the 1.2.4 version of the `edlib` library seems to be strict. Having a different version of this library may cause the toolchain to malfunction at evaluation time. Similarly, for `tensorflow`, it seems that version 2.0 can cause issues with training. We advise caution while using versions of libraries different from those mentioned in the requirements file.
 
 ## Training
 
@@ -76,9 +76,7 @@ python3 train.py
 Training might take between 7 minutes to 20 minutes depending on the machine configuration. Please note that executing the training routine will **overwrite any previously trained model**.
 
 ## Testing/Evaluation
-<!--
-**Testing using pretrained models**: This repository offers pretrained models in the [macer/](macer/) directory. Barring inconsistencies due to versions of various packages or system environment, it should be possible to directly use these to perform evaluation. Please see below on how to perform training afresh.
--->
+
 ### Repair individual C programs
 To perform repair on a single C program using MACER, use
 ```eval
