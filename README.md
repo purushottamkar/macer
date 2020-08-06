@@ -7,7 +7,7 @@ This repository is the official implementation of MACER: A Modular Framework for
 ### Installing Base Packages and Curate Datasets
 
 This project runs on `Python 3.7`.
-To install all packages, and curate the datasets from TRACER and DeepFix, run
+To install all packages, and curate the datasets from TRACER and DeepFix, install `conda` and run
 
 `sudo make install`
 
@@ -16,6 +16,13 @@ The MakeFile provided executes several steps. These are enumerated below for sak
 1. Ubuntu/Debian packages
     
     `sudo apt install clang python3-pip unzip gzip curl sqlite3`
+
+1. Anaconda environment
+    
+    ```
+    conda create --name macer37 python=3.7
+	conda activate macer37
+    ```
 
 1. Python packages
     

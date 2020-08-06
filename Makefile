@@ -1,7 +1,11 @@
 install:
-	# Install required packages
+	# Install required tools
 	apt-get install clang python3-pip unzip gzip curl sqlite3
 	ln -s /usr/lib/x86_64-linux-gnu/libclang-*.so.1 /usr/lib/x86_64-linux-gnu/libclang.so
+	
+	# Initialize conda environment and install required libraries
+	conda create --name macer37 python=3.7
+	conda activate macer37
 	pip3 install --version -r requirements.txt
 
 	# Pull Tracer dataset
