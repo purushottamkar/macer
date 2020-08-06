@@ -6,6 +6,7 @@ This repository is the official implementation of MACER: A Modular Framework for
 
 ### Installing Base Packages and Curate Datasets
 
+This project runs on `Python 3.7`.
 To install all packages, and curate the datasets from TRACER and DeepFix, run
 
 `sudo make install`
@@ -134,10 +135,10 @@ python3 testRepair.py deepfix 5
 
 MACER should offer the following performance on the given datasets. Minor deviations are expected if training afresh due to various randomizations used during the training process.
 
-| Dataset            | Repair Accuracy |    
-| ------------------ |---------------- | 
-| TRACER SingleLine  |     0.805       |
-| DeepFix            |     0.566       |
+| Dataset           | Repair Accuracy |
+| ----------------- | --------------- |
+| TRACER SingleLine | 0.805           |
+| DeepFix           | 0.566           |
 
 ## Contributing
 This repository is released under the MIT license. If you would like to submit a bugfix or an enhancement to MACER, please open an issue on this GitHub repository. We welcome other suggestions and comments too (please mail the corresponding author at purushot@cse.iitk.ac.in)
