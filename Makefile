@@ -1,7 +1,7 @@
 install:
 	# Install required packages
 	apt-get install clang python3-pip unzip gzip curl sqlite3
-	ln -s /usr/lib/x86_64-linux-gnu/libclang-* /usr/lib/x86_64-linux-gnu/libclang.so
+	ln -s /usr/lib/x86_64-linux-gnu/libclang-*.so.1 /usr/lib/x86_64-linux-gnu/libclang.so
 	pip3 install --version -r requirements.txt
 
 	# Pull Tracer dataset
