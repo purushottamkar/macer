@@ -6,7 +6,7 @@ This repository is the official implementation of MACER: A Modular Framework for
 
 ### Installing Base Packages and Curate Datasets
 
-This project runs on `Python 3.7`.
+This project runs on `Python 3.6`.
 To install all packages, and curate the datasets from TRACER and DeepFix, install `conda` and run
 
 `sudo make install`
