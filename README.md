@@ -20,8 +20,8 @@ The MakeFile provided executes several steps. These are enumerated below for sak
 1. Anaconda environment
     
     ```
-    conda create --name macer37 python=3.7
-	conda activate macer37
+    conda create --name macer36 python=3.6
+	conda activate macer36
     ```
 
 1. Python packages
