@@ -1,7 +1,7 @@
 install:
 	# Install required tools
 	apt-get install clang python3-pip unzip gzip curl sqlite3
-	ln -s /usr/lib/x86_64-linux-gnu/libclang-*.so.1 /usr/lib/x86_64-linux-gnu/libclang.so
+	if [ -f /usr/lib/x86_64-linux-gnu/libclang.so ] ; then echo "libclang symbolic link exists"; else ln -s /usr/lib/x86_64-linux-gnu/libclang-*.so.1 /usr/lib/x86_64-linux-gnu/libclang.so; fi
 	
 	# Initialize conda environment and install required libraries
 	conda create --name macer36 python=3.6
